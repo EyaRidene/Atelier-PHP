@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/lux/bootstrap.css">
+    <title>Formulaire</title>
+</head>
+<body>
+<div class="container p-3" style=" width: 60% ">
+    <h2 class="text-center"> Sandwitchs </h2>
+    <br>
+    <form action="resap.php" method="post" enctype="multipart/form-data">
+        <div class=" form-group ">
+            <label for="Nom">Nom</label>
+            <input name="nom" type="text" class="form-control" id="Nom" placeholder="Entrer nom">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="Prenom">Prénom</label>
+            <input name="prenom" type="text" class="form-control" id="Prenom" placeholder="Entrer prénom">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="Adresse">Adresse</label>
+            <input name="adresse" type="text" class="form-control" id="Adresse" placeholder="Entrer Adresse">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="CIN">CIN</label>
+            <input name="cin" type="file" class="form-control" id="CIN" placeholder="Entrer CIN">
+        </div>
+        <br>
+        <div class="form-group ">
+            <label>Nbre Sandwitch</label>
+            <input name="nbre" type="number" class="form-control" id="nbreS"  placeholder="Entrer nb sandwitch">
+        </div>
+        <br>
+        <div>
+            <label>Type de sandwitch</label>
+            <select class="form-control" name="type">
+                <option name="type">Viande</option>
+                <option name="type">Poulet</option>
+                <option name="type">Escalope</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label class="form-check-label" > Ingredient</label>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check1" name="harissa">
+                <label class="form-check-label" for="Check1" > harissa</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check2" name="salade">
+                <label class="form-check-label" for="Check2" >salade</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check3" name="mayonaise">
+                <label class="form-check-label" for="Check3">mayonaise</label>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Commander</button>
+    </form>
+    </div>
+<script src="alert.js"></script>
+</body>
+
+</html>
